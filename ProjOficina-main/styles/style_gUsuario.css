@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2b2a2a;
+    border-bottom: solid  #424242 1px;
+    padding: 5px;
+    color: white;
+}
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.control {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    width: 25vw;
+    transition: all 0.6s ease;
+  }
+  
+  .control:hover {
+    border-color: #ed3232;
+    box-shadow: 0 0 0 0.2rem rgba(237, 50, 50, 0.25);
+    transform: scale(1.1);
+  }
+  .control:focus {
+    border-color: #ed3232;
+    box-shadow: 0 0 0 0.2rem rgba(237, 50, 50, 0.25);
+    transform: scale(1.1);
+  }
+.small-img{
+    height: 65px;
+    width: 65px;
+  }
+.title{
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha no eixo vertical */
+    align-items: center;    /* Alinha no eixo horizontal */
+    background: #212121;
+    height: 100vh;          /* Garante que ocupa a tela toda */
+}
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  tr:hover {
+    background-color: #ccc;
+  }
+  ion-icon {
+    font-size: 24px;
+    font-weight: 800;
+  }
+.btn-voltar{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: transparent;
+    height: 30px;
+    width: 70px;
+    border-radius: 50px;
+    border: solid 2px #ed3232;
+    color: #ed3232;
+    transition: all 0.6s ease;
+}
+.btn-voltar:hover{
+    background-color: #ed3232;
+    color: white;
+}
+.btn-voltar:active{
+    opacity: 50%;
+    transform: scale(0.9);
+}
+.btn-excluir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: #ed3232;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 2px;
+    transition: all 0.6s ease;
+}
+.btn-excluir:hover{
+    background-color: white;
+    color: #ed3232;
+}
+.btn-excluir:active{
+    opacity: 50%;
+}
+.btn-editar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 2px;
+    transition: all 0.6s ease;
+}
+.btn-editar:hover{
+    background-color: white;
+    color: black;
+}
+.btn-editar:active{
+    opacity: 50%;
+}
+.btn-adicionar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: #ed3232;
+    height: 30px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin: 2px;
+    transition: all 0.6s ease;
+}
+.btn-adicionar:hover{
+    background-color: white;
+    color: #ed3232;
+    cursor: pointer;
+}
+.btn-adicionar:active{
+    opacity: 50%;
+}
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #424242;
+    padding: 25px;
+    border-radius: 15px;
+    width: 50vw;            
+    max-width: 800px;       
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.control{
+    margin: 5px;
+    height: 25px;
+    width: 250px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.logo{
+    float: left;
+    height: 25px;
+    width: 45px;
+}
+.title-container{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: white;
+}
+/* From Uiverse.io by benjimich */ 
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+  }
+  
+  .input {
+    max-width: 190px;
+    height: 85%;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fafafa;
+    caret-color: #f7f7f8;
+    color: #000000;
+    padding: 1px 10px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  
+  .input:hover {
+    border: 2px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  .input:focus {
+    border: 2px solid #ed3232;
+    background-color: #d8d8d8;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(42, 42, 45, 1);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .search__btn:hover {
+    background-color: rgba(54, 54, 56, 1);
+  }
+  .search__btn:active {
+    transform: scale(0.9);
+    background-color: rgba(54, 54, 56, 1);
+  }
+  
